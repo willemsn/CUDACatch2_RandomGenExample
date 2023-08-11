@@ -99,7 +99,7 @@ target_link_libraries(unit_test_example_t00_CUDA Catch2::Catch2WithMain)
 add_test(NAME unit_test::unit_test_example_t00_CUDA COMMAND unit_test_example_t00_CUDA)
 
 cuda_add_executable(unit_test_example_t01_CUDA
-  CUDA_RandomKernel.cu cudaKernels.h
+  CUDA_RandomKernel.cu CUDA_RandomKernel.h
   t01_CUDA.cpp
   )
 target_link_libraries(unit_test_example_t01_CUDA ${CUDA_LIBRARIES})
